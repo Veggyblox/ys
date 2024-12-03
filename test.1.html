@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+        //creating an array
+        let numbers = [1, 2, 3, 4, 5, 6, 7];
+        //adding element
+        numbers.push(6); //add to the end
+        numbers.unshift(3); //add to the beginning
+        document.write(numbers)
+        //removing elements
+        numbers.pop()//remove last element of array
+        document.write(numbers);
+        numbers.shift(); //remove first element of array
+        document.write(numbers);
+        //access array element
+        document.write(numbers[4]);
+
+        var fruits = ['Mango', 'Strawberry', 'Blueberry', 'Banana', 'Apple'];
+        document.getElementById('demo').innerHTML = fruits.join("*");
+        document.getElementById('demo1').innerHTML = fruits.pop();
+        document.getElementById('demo1').innerHTML = fruits;
+
+        let score = [10, 11, 12, 15, 20, 22, 25];
+        let evenNumber = [];
+        for (let i = 0; i < score.length; i++) {
+            if (score[i] % 2 == 0) {
+                evenNumber.push(score[i]);
+            }
+        }
+        document.write('Even numbers are: ', evenNumber);
+    </script>
+</body>
+
+</html>
